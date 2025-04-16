@@ -16,8 +16,8 @@ jobs:
 
       - name: Extract Module Name and Version
         run: |
-          module_name = ${{ github.event.client_payload.module }}
+          module_name=${{ github.event.client_payload.module }}
           echo "Module Name: $module_name"
 
-          version = ${{ github.event.client_payload.version }}
+          version=${{ github.event.client_payload.version }}
           echo "Version: $version"
